@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducers from './src/reducers/index'
 import { Header } from './src/components/common/index'
+import LibraryList from './src/components/LibraryList'
 
 class App extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class App extends React.Component {
       <Provider store={createStore(reducers)}>
         <View>
           <Header headerText='Tech Used' />
-          <Text>Open up App.js to start working on your app!</Text>
+          <LibraryList />
         </View>
       </Provider>
     );
